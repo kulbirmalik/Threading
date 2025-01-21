@@ -16,7 +16,7 @@ public class ExecutorServiceMain {
 
         for(int i=1;i<=15;i++){
 
-            executor.execute(() -> {
+            executor.submit(() -> {
                 try {
                     Thread.sleep(1000);
                 } catch (InterruptedException e) {
